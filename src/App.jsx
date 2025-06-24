@@ -1,18 +1,18 @@
 import './App.css'
 import Layout from "./Layouts/Layout";
 import Home from "./pages/Home";
+import QuienesSomos from "./pages/QuienesSomos";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/TP5_EFSI2-Bebczuk_Susel/" element={<Layout />}>
+        <Route path="/TP7_EFSI_Bebczuk_Susel/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="/TP5_EFSI2-Bebczuk_Susel/ruta1" element={<componente />} /> */}
+          <Route path="/TP7_EFSI_Bebczuk_Susel/QuienesSomos" element={<QuienesSomos />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App

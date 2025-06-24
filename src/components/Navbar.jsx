@@ -5,9 +5,8 @@ function Navbar(){
     return(
         <nav>
             <ul>
-            <li><Link to="/TP5_EFSI2-Bebczuk_Susel/">Home</Link></li>
-            {/* <li><Link to="/TP5_EFSI2-Bebczuk_Susel/p1">Nuevas reservas</Link></li>
-            <li><Link to="/TP5_EFSI2-Bebczuk_Susel/MisCitas">Mis citas</Link></li> */}
+            <li><Link to="/TP7_EFSI_Bebczuk_Susel/">Home</Link></li>
+            <li><Link to="/TP7_EFSI_Bebczuk_Susel/QuienesSomos">Quiénes somos</Link></li>
             </ul>
         </nav>
     );

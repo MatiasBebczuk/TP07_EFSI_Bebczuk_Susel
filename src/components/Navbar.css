@@ -1,20 +1,15 @@
 nav{
-    background-color: white;
+    background: linear-gradient(#01257D, #133eaa);
     display: flex;
     width: 100vw;
+    top: 0;
+    position: fixed;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.74);
 }
    
 nav ul{
     list-style-type: none;
     display: flex;
     gap: 10px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: navy;
-}
-
-nav ul li a:hover{
-    color: rgb(0, 0, 255);
 }
