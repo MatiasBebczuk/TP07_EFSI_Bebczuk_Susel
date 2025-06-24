@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer(){
     return(
         <footer>
-            <p>&copy; TP07 inc</p>
+            <p>Trabajo hecho por Gonzalo Susel y Matias Bebczuk, todos los derechos reservados.</p>
         </footer>
     );
 }

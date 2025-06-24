@@ -7,6 +7,7 @@ function Navbar(){
             <ul>
             <li><Link to="/TP7_EFSI_Bebczuk_Susel/">Home</Link></li>
             <li><Link to="/TP7_EFSI_Bebczuk_Susel/QuienesSomos">Quiénes somos</Link></li>
+            <li><Link to="/TP7_EFSI_Bebczuk_Susel/Contacto">Contacto</Link></li>
             </ul>
         </nav>
     );

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
 html {
-  font-family: "Funnel Display";
-  background-color: #133eaa !important;
+  background-color: #133EAA !important;
+  font-family: "Funnel Display" !important;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
 }
 
 main{
+  min-height: 90vh;
   padding-left: 20px;
 }
 
@@ -24,8 +25,9 @@ h1 {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6, p, a, button {
   color: white;
+  font-family: "Funnel Display";
 }
 
 a{
@@ -37,20 +39,38 @@ a:hover{
   color: rgb(206, 200, 200) !important;
 }
 
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea{
+  font-family: "Funnel Display";
+  font-size: 13px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 11px;
+  width: 100%;
+  background-color: white;
+}
+
+select, .form button {
+  width: 103.5%;
+}
+
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-family: "Funnel Display";
+  background-color: #1d33fc;
+  border: 1px solid rgb(39, 60, 255);
+  border-radius: 10px;
+  padding: 15px 56px;
+  text-align: center;
+  font-size: 17px;
+}
+
+button:hover{
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus, button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: rgb(65, 83, 253);
 }
