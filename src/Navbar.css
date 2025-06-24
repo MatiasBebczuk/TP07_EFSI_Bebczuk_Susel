@@ -1,0 +1,20 @@
+nav{
+    background-color: white;
+    display: flex;
+    width: 100vw;
+}
+   
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: navy;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 255);
+}
