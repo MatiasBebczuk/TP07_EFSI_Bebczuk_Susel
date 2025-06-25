@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./ProductoDetalle.css";
@@ -16,13 +16,25 @@ export default function ProductoDetalle(){
     }, []);
     
     return (<div className="productodetalle">
-        <img src={(producto.images || [""])[0]}/>
+        {producto.images && producto.images.length != 0 && <img src={producto.images[0]}/>}
         <div>
-            <div style={{display: "flex", gap: 10}}>
-                <h1>{producto.title}</h1>
-                <h2>${producto.price}</h2>
-            </div>
+            <h1>{producto.title}</h1>
+            <h2>${producto.price}</h2>
             <p>{producto.description}</p>
+            {producto.reviews && <div className="reviews">
+                <h2>Opiniones</h2>
+                {
+                    producto.reviews.map((review, i) => <div className="review" key={i}>
+                        <h3>{review.reviewerName} | {review.rating}/5</h3>
+                        <p>{review.comment}</p>
+                    </div>)
+                }
+            </div>}
+
+            <div className="botonescompra">
+                <button>Comprar</button>
+                <button>Añadir al carrito</button>
+            </div>
         </div>
     </div>);
 }

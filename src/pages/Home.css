@@ -1,0 +1,18 @@
+.home-cards{
+    display: flex;
+    gap: 20px;
+    width: 95vw;
+}
+
+.home-card img{
+    width: 65%;
+    border-radius: 100%;
+}
+
+.home-card{
+    width: 50%;
+}
+
+.home-card img:hover{
+    opacity: 70%;
+}
