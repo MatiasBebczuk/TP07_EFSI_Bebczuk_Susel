@@ -1,10 +1,10 @@
 .home-cards{
     display: flex;
     gap: 20px;
-    width: 95vw;
 }
 
 .home-card img{
+    min-width: 190px;
     width: 65%;
     border-radius: 100%;
 }
