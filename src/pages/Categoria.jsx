@@ -19,11 +19,12 @@ export default function Categoria(){
                 }
 
                 setProductos(productosCategoria);
+                setError(false);
             });
         }
 
         fetch();
-    }, []);
+    }, [IdCategoria]);
     
     return (<>
         {!error && <>
