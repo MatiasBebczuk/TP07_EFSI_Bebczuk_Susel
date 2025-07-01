@@ -17,24 +17,24 @@ function Navbar(){
 
     return(
         <nav>
-            <img onClick={_ => {location.pathname = "/TP7_EFSI_Bebczuk_Susel/"}} className="logo" src="/TP7_EFSI_Bebczuk_Susel/logo.png"/>
+            <img onClick={_ => {location.pathname = "/"}} className="logo" src="/logo.png"/>
             <ul>
-                <li><Link to="/TP7_EFSI_Bebczuk_Susel/">Home</Link></li>
-                <li><Link to="/TP7_EFSI_Bebczuk_Susel/QuienesSomos">Quiénes somos</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/QuienesSomos">Quiénes somos</Link></li>
 
                 <li>
                     <div className="dropdown">
                         <p className="dropbtn"><b>v</b> Productos</p>
                         <div className="dropdown-content">
-                            <Link to="/TP7_EFSI_Bebczuk_Susel/Productos">Ver todos</Link>
+                            <Link to="/Productos">Ver todos</Link>
                             {
-                                categorias.map((el, i) => <Link key={i} to={"/TP7_EFSI_Bebczuk_Susel/Categoria/" + el}>{el}</Link>)
+                                categorias.map((el, i) => <Link key={i} to={"/Categoria/" + el}>{el}</Link>)
                             }
                         </div>
                     </div>
                 </li>
 
-                <li><Link to="/TP7_EFSI_Bebczuk_Susel/Contacto">Contacto</Link></li>
+                <li><Link to="/Contacto">Contacto</Link></li>
             </ul>
         </nav>
     );

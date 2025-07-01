@@ -48,10 +48,10 @@ export default function Home(){
         </div>
 
         <div style={{display: "flex", gap: 15, paddingLeft: "15vw", marginBottom: 10}}>
-            <img onClick={() => {location.pathname = "/TP7_EFSI_Bebczuk_Susel/Productos"}} className="home-card" src="/TP7_EFSI_Bebczuk_Susel/catalogo.png"/>
+            <img onClick={() => {location.pathname = "/Productos"}} className="home-card" src="/catalogo.png"/>
             <div style={{display: "flex", flexDirection: "column", gap: 15, width: "60%"}}>
-                <img className="home-card" onClick={() => {location.pathname = "/TP7_EFSI_Bebczuk_Susel/QuienesSomos"}} src="/TP7_EFSI_Bebczuk_Susel/quienessomos.png"/>
-                <img className="home-card" onClick={() => {location.pathname = "/TP7_EFSI_Bebczuk_Susel/Contacto"}} src="/TP7_EFSI_Bebczuk_Susel/contacto.png"/>
+                <img className="home-card" onClick={() => {location.pathname = "/QuienesSomos"}} src="/quienessomos.png"/>
+                <img className="home-card" onClick={() => {location.pathname = "/Contacto"}} src="/contacto.png"/>
             </div>
         </div>
 

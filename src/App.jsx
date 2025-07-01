@@ -12,14 +12,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/TP7_EFSI_Bebczuk_Susel/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/QuienesSomos" element={<QuienesSomos />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/Contacto" element={<Contacto />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/Productos" element={<Productos />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/ProductoDetalle/:IdProducto" element={<ProductoDetalle />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/Categoria/:IdCategoria" element={<Categoria />} />
-          <Route path="/TP7_EFSI_Bebczuk_Susel/*" element={<NotFound />} />
+          <Route path="/QuienesSomos" element={<QuienesSomos />} />
+          <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/Productos" element={<Productos />} />
+          <Route path="/ProductoDetalle/:IdProducto" element={<ProductoDetalle />} />
+          <Route path="/Categoria/:IdCategoria" element={<Categoria />} />
+          <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
