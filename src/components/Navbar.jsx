@@ -21,7 +21,6 @@ function Navbar(){
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/QuienesSomos">Quiénes somos</Link></li>
-
                 <li>
                     <div className="dropdown">
                         <p className="dropbtn"><b>v</b> Productos</p>
@@ -33,7 +32,6 @@ function Navbar(){
                         </div>
                     </div>
                 </li>
-
                 <li><Link to="/Contacto">Contacto</Link></li>
             </ul>
         </nav>

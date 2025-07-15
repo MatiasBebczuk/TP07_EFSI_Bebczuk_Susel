@@ -1,8 +1,7 @@
 import Producto from "./Producto";
 import "./ListaProductos.css";
 
-export default function ListaProductos(productos){
-    productos = productos.productos;
+export default function ListaProductos({productos}){
     if(productos.length == 0){
         return <></>;
     }

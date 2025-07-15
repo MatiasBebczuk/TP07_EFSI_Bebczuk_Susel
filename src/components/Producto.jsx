@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Producto.css";
 
-export default function Producto(producto){
-    producto =  producto.producto;
+export default function Producto({producto}){
 
     return (<div className="card">
     <Link to={"/ProductoDetalle/" + producto.id}><img src={producto.thumbnail || ""} className="card-img-top"/></Link>

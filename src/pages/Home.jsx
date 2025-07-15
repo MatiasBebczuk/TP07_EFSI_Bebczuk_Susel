@@ -7,7 +7,7 @@ export default function Home(){
     const [productos, setProductos] = useState([]);
     const [activeImg, setActiveImg] = useState(0);
 
-    useEffect(() => {
+    useEffect(() => { //funcion de los 5 productos para nuestros productos
         async function fetch(){
             await axios.get("https://dummyjson.com/products")
             .then(resp => setProductos(resp.data.products.filter(_ => Math.random() >= 0.5).slice(0, 5)))
